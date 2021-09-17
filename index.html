@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>HOME PAGE</title>
+<body>
+
+		<br>
+  		<ul>
+   				 <h1>HOME PAGE - PERSONAL INFORMATION</h1>     
+  					  <p id ="rcorners2"><b>NAME: Gail arela</b></br>
+  					  					 <br><b>Gender: Undecided</b></br>
+  					  					 <br><b>Civil Status: Married</b></br>
+  					  					 <br><b>Permanent Address: Mars</b></br>
+  					  					 <br><b>Phone Number: 0912345678</b></br>
+  					  					 <br><b>Email Address: gggggail@gmail.com </br></p>
+  	    </ul>
+   			 <nav>
+				<ul>
+				<button class="transparent_btn1"><a href="Education.html"><span><strong>Educational Attainment</strong></a>
+				<button class="transparent_btn2"><a href="Seminars.html"><span><strong>Seminars and Training Attended</strong></a>
+				<button class="transparent_btn3"><a href="Skills.html"><span><strong>Skills</strong></a>
+				<button class="transparent_btn4"><a href="Experiences.html"><span><strong>Experiences/Awards</strong></a>
+				<button class="transparent_btn5"><a href="References.html"><span><strong>Character References</strong></a>
+
+				</ul>
+			</nav>
+		
+</div>
+	<div class="slidershow middle">
+
+	   <div class="slides">
+       				 <input type="radio" name="r" id="r1" checked>
+        			 <input type="radio" name="r" id="r2">
+       				 <input type="radio" name="r" id="r3">
+        			 <input type="radio" name="r" id="r4">
+       				 <input type="radio" name="r" id="r5">
+
+        <div class="slide s1">
+          	<img src="img\12.jpg" alt="">
+       			 </div>
+        <div class="slide">
+         	 <img src="img\19.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img\15.jpg" alt="">
+        </div>
+        <div class="slide">
+        	  <img src="img\17.jpg" alt="">
+        </div>
+        <div class="slide">
+         	 <img src="img\kazuha1.png" alt="">
+        </div>
+
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+      </div>
+  </div>
+
+	<script type="text/javascript">
+	var counter = 1;
+	setInterval(function(){
+	document.getElementById('radio'+ counter).checked = true;
+	counter++;
+	if(counter > 5){
+	counter = 1;
+	}
+},5000);
+</script>
+
+
+</body>
+</html>

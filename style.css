@@ -1,0 +1,538 @@
+html{
+	background-image: url(img/kazuha2.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.slidershow{
+  margin-left: 190px;
+    width: 1070px;
+    height: 640px;
+    margin-top: 32px;
+    float: right;
+    overflow: hidden;
+}
+.middle{
+  position: absolute;
+  top: 42%;
+  left: 43%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #FFC900;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100&;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+:link{
+	text-decoration: none;
+
+}
+.transparent_btn1 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  shadow-border: #15f4ee;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.transparent_btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.6s;
+}
+
+.transparent_btn1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.transparent_btn1:hover span {
+  padding-right: 25px;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+
+.transparent_btn1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.transparent_btn2 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  shadow-border: #15f4ee;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.transparent_btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.transparent_btn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.transparent_btn2:hover span {
+  padding-right: 25px;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+
+.transparent_btn2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.transparent_btn3 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  shadow-border: #15f4ee;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.transparent_btn3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.transparent_btn3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.transparent_btn3:hover span {
+  padding-right: 25px;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+
+.transparent_btn3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.transparent_btn4 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  shadow border: #15f4ee;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.transparent_btn4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.transparent_btn4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.transparent_btn4:hover span {
+  padding-right: 25px;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+
+.transparent_btn4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.transparent_btn5 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  shadow-border: #15f4ee;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.transparent_btn5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.transparent_btn5 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.transparent_btn5:hover span {
+  padding-right: 25px;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+
+.transparent_btn5:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  text-align: left;
+  padding: 20px; 
+  width: 300px;
+  height: 225px;
+}
+#rcorners1 {
+	border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 300px;
+  height: 180px;
+
+}
+.btn{
+  background-color: rgba(0, 0, 0, 0.1);
+	display: block;
+	border: 0;
+	font-size: 16px;
+	height: 5;
+	padding: 16px 30px;
+	border-radius: 20px;
+	color: #555555;
+}
+.botnav {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 190px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.botnav span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botnav span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botnav:hover span {
+  padding-right: 25px;
+}
+
+.botnav:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.btn2{
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  border: 0;
+  font-size: 16px;
+  height: 5;
+  padding: 16px 30px;
+  border-radius: 20px;
+  color: #555555;
+}
+.botnav2 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 190px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btn2 span {
+ cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn2:hover span {
+  padding-right: 25px;
+}
+
+.btn2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.btn3{
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  border: 0;
+  font-size: 16px;
+  height: 5;
+  padding: 16px 30px;
+  border-radius: 20px;
+  color: #555555;
+}
+.botnav3 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 190px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.botnav3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botnav3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botnav3:hover span {
+  padding-right: 25px;
+}
+
+.botnav3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.btn4{
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  border: 0;
+  font-size: 16px;
+  height: 5;
+  padding: 16px 30px;
+  border-radius: 20px;
+  color: #555555;
+}
+.botnav4 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 190px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btn4 span {
+ cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn4:hover span {
+  padding-right: 25px;
+}
+
+.btn4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn5{
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  border: 0;
+  font-size: 16px;
+  height: 5;
+  padding: 16px 30px;
+  border-radius: 20px;
+  color: #555555;
+}
+.botnav5 {
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 190px;
+  transition: all 0.6s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.botnav5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botnav5 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10;
+  top: 5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botnav5:hover span {
+  padding-right: 25px;
+}
+
+.botnav5:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
